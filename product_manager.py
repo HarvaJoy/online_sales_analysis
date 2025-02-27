@@ -6,7 +6,7 @@ class ProductManager:
         """Add a product to the list of products"""
         self.products.append(product)
         return "Added product"
-
+    
     def display_products(self):
         """Display a list of product"""
         if not self.products:
@@ -29,6 +29,10 @@ class ProductManager:
         else:
             self.products.pop(index_product[0])
             return f"Removed {product_name}"
+    
+    def filter_product(self, product_name):
+        """Filter a product by name"""
+        return list(filter(lambda x: x.name == product_name, self.products))[0]
             
       
             

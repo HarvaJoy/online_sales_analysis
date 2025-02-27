@@ -24,5 +24,10 @@ products = [
         "name": "Headphones",
         "price": 250.0,
         "quantity": 158
-        }
+        },
+    {
+        "name": "Memory USB",
+        "price": 30.0,
+        "quantity": 10
+    }
 ]
