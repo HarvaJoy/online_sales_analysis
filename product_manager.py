@@ -15,9 +15,20 @@ class ProductManager:
             list_product = ""
             for product in self.products: 
                 list_product += product.display_info()+"\n"
-            return "All Products:" + "\n" + f"{list_product}"
+            return f"{list_product}"
     
     def calc_inventory_value(self):
         """Calculate value of unsold products"""    
         return sum(product.price * product.quantity for product in self.products)
-        
+    
+    def remove_product(self, product_name):
+        """Remove products by name"""
+        index_product = [index for index, product in enumerate(self.products) if product.name == product_name]
+        if not index_product:
+            return f"The product name {product_name} doesn't exist."
+        else:
+            self.products.pop(index_product[0])
+            return f"Removed {product_name}"
+            
+      
+            
