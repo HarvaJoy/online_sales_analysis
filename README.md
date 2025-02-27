@@ -9,13 +9,13 @@ Functional Python project that uses advanced OOP concepts. System that can work 
 
 
 ## Classes and Functionalities
-    * **Product**:
+    * Product:
         - Contains the attributes: name, price and quantity.
         Methods:
         - display_info() - Method for displaying product information.
         - update_quantity() - Method for updating product quantity.
     
-    * **ProductManager**:
+    * ProductManager:
         - Contains as an attribute a list of all available products.
         Methods:
         - add_product() - Adding products.
@@ -24,7 +24,7 @@ Functional Python project that uses advanced OOP concepts. System that can work 
         - remove_product() - Remove products by name.
         - filter_product() - Filter a product by name.
     
-     * **Cart**:
+     * Cart:
         - Contains the attributes: car_items.
         Methods
         - add_item() - Adding products to the cart.
